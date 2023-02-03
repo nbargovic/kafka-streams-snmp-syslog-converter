@@ -1,0 +1,99 @@
+{"peerAddress": "192.168.3.4"}+{
+  "peerAddress": "192.168.3.4",
+  "peerPort": "5555",
+  "securityName": "test1",
+  "sysUpTime": 830631476,
+  "enterprise": "1.3.6.1.4.1.2636.4.4",
+  "genericTrap": 6,
+  "specificTrap": 2,
+  "variables": [
+    {
+      "oid": "1.3.6.1.4.1.2636.3.14.1.1.0",
+      "type": "ipaddress",
+      "value": "55.66.77.88"
+    },
+    {
+      "oid": "1.3.6.1.4.1.2636.3.14.1.2.0",
+      "type": "ipaddress",
+      "value": "11.22.33.44"
+    },
+    {
+      "oid": "1.3.6.1.4.1.2636.3.14.1.3.0",
+      "type": "integer",
+      "value": "1"
+    },
+    {
+      "oid": "1.3.6.1.4.1.2636.3.14.1.6.0",
+      "type": "integer",
+      "value": "30"
+    },
+    {
+      "oid": "1.3.6.1.4.1.2636.3.14.1.8.0",
+      "type": "octetString",
+      "value": ""
+    },
+    {
+      "oid": "1.3.6.1.6.3.1.1.4.3.0",
+      "type": "objectIdentifier",
+      "value": "1.3.6.1.4.1.2636.1.1.1.2.29"
+    }
+  ],
+  "pduBerEncoded": "aGVsbG8gd29ybGQuCg==",
+  "pduRawBytes": "aGVsbG8gd29ybGQuCg=="
+}#{
+  "peerAddress": "192.168.5.6"}+{
+  "peerAddress": "192.168.5.6",
+  "peerPort": "7777",
+  "securityName": "test2",
+  "sysUpTime": 165628659,
+  "enterprise": "1.3.6.1.2.1.15.7",
+  "genericTrap": 6,
+  "specificTrap": 2,
+  "variables": [
+    {
+      "oid": "1.3.6.1.2.1.15.3.1.14.33.20.101.6",
+      "type": "octetString",
+      "value": "00:00"
+    },
+    {
+      "oid": "1.3.6.1.2.1.15.3.1.2.33.20.101.6",
+      "type": "integer",
+      "value": "2"
+    },
+    {
+      "oid": "1.3.6.1.6.3.1.1.4.3.0",
+      "type": "objectIdentifier",
+      "value": "1.3.6.1.4.1.2636.1.1.1.2.25"
+    }
+  ],
+  "pduBerEncoded": "aGVsbG8gd29ybGQuCg==",
+  "pduRawBytes": "aGVsbG8gd29ybGQuCg=="
+}#{
+  "peerAddress": "192.168.7.8"}+{
+  "peerAddress": "192.168.7.8",
+  "peerPort": "8888",
+  "securityName": "test3",
+  "sysUpTime": 165651199,
+  "enterprise": "1.3.6.1.2.1.15.7",
+  "genericTrap": 6,
+  "specificTrap": 2,
+  "variables": [
+    {
+      "oid": "1.3.6.1.2.1.15.3.1.14.46.46.46.46",
+      "type": "octetString",
+      "value": ""
+    },
+    {
+      "oid": "1.3.6.1.2.1.15.3.1.2.46.46.46.46",
+      "type": "integer",
+      "value": "1"
+    },
+    {
+      "oid": "1.3.6.1.6.3.1.1.4.3.0",
+      "type": "objectIdentifier",
+      "value": "1.3.6.1.4.1.2636.1.1.1.2.25"
+    }
+  ],
+  "pduBerEncoded": "aGVsbG8gd29ybGQuCg==",
+  "pduRawBytes": "aGVsbG8gd29ybGQuCg=="
+}
