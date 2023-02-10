@@ -1,0 +1,12 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: snmp-syslog-kstream-deployment
+  labels:
+    app: snmp-syslog-kstream
+spec:
+  replicas: 1
+    spec:
+      containers:
+        - name: snmp-syslog-kstream
+          image: bargovic/snmp-syslog-kstream:0.0.1

@@ -5,34 +5,32 @@
 ### Required Environment
 * Java 11
 * Confluent Platform 6.1 or newer
+* Docker
+* Kubernetes
 
-## Build
-Use Maven to build the KStream Application.
+## Build and Deploy
+Use Maven to build the KStream Application. Push the docker image to a registry. Deploy with kubectl.
 
 ```
-mvn clean package
+docker pull registry.access.redhat.com/ubi8/openjdk-11:1.11
+mvn clean package install
+docker push bargovic/snmp-syslog-stream:0.0.1
+kubectl apply -f kstreams-deployment.yaml -n confluent
 ```
-
-A successful build will create a target directory with the following two jar files:
-* kafka-streams-snmp-syslog-converter-1.0.0.jar
-* kafka-streams-snmp-syslog-converter-1.0.0-jar-with-dependencies.jar
-
-
-The `kafka-streams-snmp-syslog-converter-1.0.0-jar-with-dependencies.jar` file contains all the dependencies needed to run the application. Therefore, this dependencies jar file should be the file executed when running the KStream Application.
 
 ## Configuration
 
 Example:
 ```
-application.id=filebeats-message-extractor
+application.id=snmp-syslog-convert
 bootstrap.servers=kafka.fios-router.home:9092
 security.protocol=PLAINTEXT
 
-# topic and table name configuration
-input.topic.name=snmp-input-data
-error.topic.name=snmp-error-data
+input.topic.name=snmp-source-data
+error.topic.name=snmp-syslog-convert-errors
+v1.topic.name=snmp-v1-data
 syslog.topic.name=syslog-output-data
-vi.topic.name=snmp-v1-data
+v2.field.name=sysUpTime
 ```
 
 ### Other Notes
